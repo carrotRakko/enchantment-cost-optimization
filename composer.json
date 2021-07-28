@@ -1,0 +1,15 @@
+{
+    "name": "carrot-rakko/enchantment-cost-optimization",
+    "authors": [
+        {
+            "name": "carrotRakko",
+            "email": "24588751+carrotRakko@users.noreply.github.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "CarrotRakko\\EnchantmentCostOptimization\\": "./src/"
+        }
+    },
+    "require": {}
+}
