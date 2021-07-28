@@ -6,4 +6,11 @@ namespace CarrotRakko\EnchantmentCostOptimization\Enchantment;
 
 class Smite extends Enchantment
 {
+    /**
+     * {@inheritDoc}
+     */
+    public static function getMaxLevel(): int
+    {
+        return 5;
+    }
 }

@@ -6,4 +6,11 @@ namespace CarrotRakko\EnchantmentCostOptimization\Enchantment;
 
 class Piercing extends Enchantment
 {
+    /**
+     * {@inheritDoc}
+     */
+    public static function getMaxLevel(): int
+    {
+        return 4;
+    }
 }
