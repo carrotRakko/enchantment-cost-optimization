@@ -45,4 +45,22 @@ abstract class Enchantment
      * @return int
      */
     abstract public static function getMaxLevel(): int;
+
+    /**
+     * Returns the "Multiplier from item" value from the "Enchantment cost multipliers" table.
+     *
+     * {@link https://minecraft.fandom.com/wiki/Anvil_mechanics#Costs_for_combining_enchantments}
+     *
+     * @return int
+     */
+    abstract public static function getMultiplierFromNonBook(): int;
+
+    /**
+     * Returns the "Multiplier from book" value from the "Enchantment cost multipliers" table.
+     *
+     * {@link https://minecraft.fandom.com/wiki/Anvil_mechanics#Costs_for_combining_enchantments}
+     *
+     * @return int
+     */
+    abstract public static function getMultiplierFromBook(): int;
 }

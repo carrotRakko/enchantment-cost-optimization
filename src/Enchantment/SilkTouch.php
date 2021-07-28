@@ -13,4 +13,20 @@ class SilkTouch extends Enchantment
     {
         return 1;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromNonBook(): int
+    {
+        return 8;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromBook(): int
+    {
+        return 4;
+    }
 }

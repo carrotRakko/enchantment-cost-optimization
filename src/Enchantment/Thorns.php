@@ -13,4 +13,20 @@ class Thorns extends Enchantment
     {
         return 3;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromNonBook(): int
+    {
+        return 8;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromBook(): int
+    {
+        return 4;
+    }
 }

@@ -13,4 +13,20 @@ class FireAspect extends Enchantment
     {
         return 2;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromNonBook(): int
+    {
+        return 4;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromBook(): int
+    {
+        return 2;
+    }
 }

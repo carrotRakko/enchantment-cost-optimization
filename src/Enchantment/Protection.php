@@ -13,4 +13,20 @@ class Protection extends Enchantment
     {
         return 4;
     }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromNonBook(): int
+    {
+        return 1;
+    }
+
+    /**
+     * @inheritDoc
+     */
+    public static function getMultiplierFromBook(): int
+    {
+        return 1;
+    }
 }
