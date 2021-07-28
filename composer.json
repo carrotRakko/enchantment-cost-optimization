@@ -11,5 +11,7 @@
             "CarrotRakko\\EnchantmentCostOptimization\\": "./src/"
         }
     },
-    "require": {}
+    "require": {
+        "php-64bit": "^8.0"
+    }
 }
