@@ -33,15 +33,27 @@ abstract class Item
     protected array $attached_enchantments;
 
     /**
+     * How many times this Item used on anvil.
+     *
+     * @var int
+     */
+    protected int $anvil_use_count;
+
+    /**
      * Item constructor.
      *
      * @param array $attached_enchantments
+     * @param int $anvil_use_count
      * @throws IncompatibleEnchantmentsException
      */
-    public function __construct(array $attached_enchantments)
+    public function __construct(array $attached_enchantments, int $anvil_use_count)
     {
         static::throwWhenIncompatibleEnchantmentsExists($attached_enchantments);
+        if ($anvil_use_count < 0) {
+            throw new AnvilUseCountOutOfRangeException();
+        }
         $this->attached_enchantments = $attached_enchantments;
+        $this->anvil_use_count = $anvil_use_count;
     }
 
     /**
@@ -52,6 +64,16 @@ abstract class Item
     public function getAttachedEnchantments(): array
     {
         return $this->attached_enchantments;
+    }
+
+    /**
+     * Simple getter.
+     *
+     * @return int
+     */
+    public function getAnvilUseCount(): int
+    {
+        return $this->anvil_use_count;
     }
 
     /**
