@@ -6,6 +6,6 @@ namespace CarrotRakko\EnchantmentCostOptimization\Item\Book;
 
 use CarrotRakko\EnchantmentCostOptimization\Item\Item;
 
-abstract class Book extends Item
+class Book extends Item
 {
 }
